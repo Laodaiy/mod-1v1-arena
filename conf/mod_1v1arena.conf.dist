@@ -5,6 +5,7 @@
 #
 #     Arena.1v1.Enable
 #         Description: Enable the 1v1 arena.
+#                描述: 启用1v1竞技场。
 #         Default:     0 - (Disabled)
 #                      1 - (Enabled)
 
@@ -13,6 +14,8 @@ Arena1v1.Enable = 1
 #    Arena1v1.Announcer
 #        Description: Announce 1v1 arena queue status to chat.
 #                      Arena.QueueAnnouncer.Enable must be enabled.
+#               描述: 将1v1竞技场排队状态通告给聊天。
+#                     必须启用Arena.QueueAnnouncer.Enable。
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
@@ -21,6 +24,7 @@ Arena1v1.Announcer = 1
 #
 #    Arena1v1.MinLevel
 #        Description: Min level to create an arena team
+#               描述: 创建竞技场队伍的最低等级
 #        Default:     80
 
 Arena1v1.MinLevel = 80
@@ -28,6 +32,7 @@ Arena1v1.MinLevel = 80
 #
 #    Arena1v1.Costs
 #        Description: Costs for create an arena team
+#               描述: 创建竞技场队伍的费用
 #        Default:     400000 - (40 gold)
 
 Arena1v1.Costs = 400000
@@ -36,6 +41,8 @@ Arena1v1.Costs = 400000
 #    Arena1v1.VendorRating
 #        Description: If true, 1v1 rating will use to calculate highest personal-rating (extended costs).
 #                      Note: The vendor-item will show as not buyable (red), but players can buy it, if enabled and rating is high enough.
+#               描述: 如果为true，1v1等级将用于计算最高个人等级（扩展费用）。
+#               注意：商店物品将显示为不可购买（红色），但如果启用且等级足够高，则玩家可以购买它。
 #        Default:     0 - (false)
 #                     1 - (true)
 
@@ -48,6 +55,11 @@ Arena1v1.VendorRating = 0
 #                      2v2 will gain 261 points (5v5points * 0.76)
 #                      and 1v1 will gain 167 points (5v5points * 0.64)
 #                      With this multiplier you can modify the arenapoints for 1v1.
+#               描述: 具有1500等级的5v5竞技场队伍每周将获得344点积分（类似暴雪）。
+#                      具有相同等级的3v3将获得302点积分（5v5points * 0.88）
+#                      2v2将获得261点积分（5v5points * 0.76）
+#                      而1v1将获得167点积分（5v5points * 0.64）
+#                      使用此乘数，您可以修改1v1的竞技点数。
 #        Default:     0.64
 
 Arena1v1.ArenaPointsMulti = 0.64
@@ -55,6 +67,7 @@ Arena1v1.ArenaPointsMulti = 0.64
 #
 #   Arena1v1.PreventHealingTalents
 #       Description: If enabled, it prevents people from having healing talents.
+#              描述: 如果启用，将阻止人们拥有治疗天赋。
 #       Default: false
 #       Value:   false
 #                true
@@ -64,6 +77,7 @@ Arena1v1.PreventHealingTalents = false
 #
 #   Arena1v1.PreventTankTalents
 #       Description: If enabled, it prevents people from having tank talents.
+#              描述: 如果启用，将阻止人们拥有坦克天赋。
 #       Default: false
 #       Value:   false
 #                true
@@ -73,6 +87,7 @@ Arena1v1.PreventTankTalents = false
 #
 #    Arena1v1.ForbiddenTalentsIDs
 #        Description: List to block specific talents id in arena. See TalentTab.dbc for available talents (you will need an DBC-Editor). The list is coma(,) separated and should have no spaces
+#               描述: 在竞技场中阻止特定天赋ID的列表。请参见TalentTab.dbc以获取可用天赋（您将需要DBC编辑器）。列表是逗号（,）分隔的，不应包含空格
 #           Default:     "0" - (no talent blocked)
 #           Example:     "201,202,382,362,282,383,163"
 
@@ -81,6 +96,7 @@ Arena1v1.ForbiddenTalentsIDs = "0"
 #
 #    Arena1v1.ArenaSlotID
 #       Description: The slot the 1v1 will be working over. Needs to be bigger or equals then 3 otherwise it will overwrite the 2v2, 3v3 or 5v5 data
+#              描述: 1v1将使用的插槽。必须大于或等于3，否则将覆盖2v2、3v3或5v5的数据
 #       Default:     3
 #       Value:
 #           2v2 = 0
