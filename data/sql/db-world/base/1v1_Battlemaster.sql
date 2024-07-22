@@ -6,5 +6,5 @@ DELETE FROM `creature_template_model`  WHERE `CreatureID` In (999991);
 INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES 
 (999991, 0, 7110, 1, 1, 23766);
 
-DELETE FROM `mod_battlemaster_entry` WHERE `entry`=999991;
-INSERT INTO `mod_battlemaster_entry` (`entry`, `bg_template`) VALUES (999991, 6);
+DELETE FROM `battlemaster_entry` WHERE `entry`=999991;
+INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES (999991, 6);
